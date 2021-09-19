@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <title>CONSULTAS</title>
+  </head>
+  <body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-6" style="background-color: black;">
+                <a href="/todos" class="btn btn-dark" >Todos los productos</a>
+
+            </div>
+            <div class="col-xl-6" style="background-color: black;">
+                <div class="dropdown">
+                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: black;
+                    border-color:transparent;">
+                      Categorías
+                    </a>
+                  
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                      <li><a class="dropdown-item" href="#">Top Ventas</a></li>
+                      <li><a class="dropdown-item" href="#">Linterna y luces</a></li>
+                      <li><a class="dropdown-item" href="/categoria-hogar">Hogar y cotidiano</a></li>
+                      <li><a class="dropdown-item" href="categoria-audio">Audio y video</a></li>
+                      <li><a class="dropdown-item" href="/categoria-belleza">Belleza</a></li>
+                    </ul>
+                  </div>
+            <!--<div class="col-xl-12" style="text-align: center;" >
+                <table class="table table-bordered table-hover">
+                    <thead>
+                        <th>ID PRODUCTO</th>
+                        <th>NOMBRE PRODUCTO</th>
+                        <th>CANTIDAD</th>
+                        <th>CATEGORÍA</th>
+                    </thead>
+                    <tbody>
+                        <% for(var i=0;i < tasks.length;i++){ %>  
+                            <tr>
+                                <td><%=tasks[i].ID_PRODUCTO%></td>
+                                <td><%=tasks[i].NOMBRE_PRODUCTO%></td>
+                                <td><%=tasks[i].CANTIDAD%></td>
+                                <td><%=tasks[i].CATEGORIA%></td>
+                            </tr>
+                        <%}%>                  
+                    </tbody>
+                </table>
+            </div>-->
+        </div>
+    </div>
+        <div class="container-fluid">
+            <div class="row justify-content-left">
+                <div class="col-xxl-12" style="background-color:white;">
+                    <h1 style="text-align: center;">Desplega productos con card</h1>
+                </div>  
+            </div>      
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-12" style="text-align: center;" >
+                    <table class="table table-bordered table-hover">
+                        <thead>
+                            <th>ID PRODUCTO</th>
+                            <th>NOMBRE PRODUCTO</th>
+                            <th>CANTIDAD</th>
+                            <th>CATEGORÍA</th>
+                        </thead>
+                        <tbody>
+                            <% for(var i=0;i < tasks.length;i++){ %>  
+                               <tr>
+                                   <td><%=tasks[i].ID_PRODUCTO%></td>
+                                   <td><%=tasks[i].NOMBRE_PRODUCTO%></td>
+                                   <td><%=tasks[i].CANTIDAD%></td>
+                                   <td><%=tasks[i].CATEGORIA%></td>
+                               </tr>
+                            <%}%>                  
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

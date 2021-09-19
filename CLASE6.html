@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Document</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+</head>
+<body>
+   <!-- <h1 class="display-3">Ola ke ase</h1>-->
+   <!--INICIO BOOTSTRAP-->
+   <!--<div class="container">
+       <div class="row">
+           <div class="col-xxl-4" style="background-color: antiquewhite;">
+               <h1>Seccion 1</h1>
+               <p>esto es una prueba</p>
+           </div>
+           <div class="col-xxl-4" style="background-color: blue;">
+            <h1>Seccion 2</h1>
+            <p>esto es una prueba</p>
+        </div>
+        <div class="col-xxl-4" style="background-color: blueviolet">
+            <h1>Seccion 3</h1>
+            <p>esto es una prueba</p>
+        </div>
+        <div class="col-xxl-4" style="background-color: yellow">
+            <h1>Seccion 4</h1>
+            <p>esto es una prueba</p>
+        </div>
+       </div>
+   </div>-->
+
+   <!--USO DE COLUMNAS EN BOOTSTRAP-->
+    <!--<div class="container-fluid">
+        <div class="row">
+            <div class="col-xxl-11 col-xl-10 col-lg-9 col-md-8 col-sm-7 col-6" style="background-color: aquamarine;">
+                <h1>COLUMNA 1</h1>
+                <p>Prueba</p>
+            </div>
+            <div class="col-xxl-1 col-xl-2 col-lg-3 col-md-4 col-sm-5 col-6" style="background-color: bisque;">
+                <h1>COLUMNA 2</h1>
+                <p>Prueba</p>
+            </div>                 
+        </div>
+    </div>-->
+
+    <!--FORMATO TABLA BOOTSTRAP-->
+    <!--<div class="container">
+        <table class="table table-hover">
+            <caption>Contactos de la tienda por áreas</caption>
+            <tr>
+                <th>Áreas de la tienda</th>
+                <th>Contacto</th>
+                <th>Teléfono</th>
+            </tr>
+            <tr>
+                <td>Calzado Hombre</td>
+                <td>Estudiante 1</td>
+                <td>300 000 00 </td>
+            </tr>
+            <tr>
+                <td>Zapatillas para Hombre</td>
+                <td>Estudiante 2</td>
+                <td>300 000 01 </td>
+            </tr>
+            <tr>
+                <td>Calzado para dama</td>
+                <td>Estudiante 3</td>
+                <td>300 000 02 </td>
+            </tr>
+            <tr>
+                <td>Deportivos para niño</td>
+                <td>Estudiante 4</td>
+                <td>300 000 03 </td>
+            </tr>
+        </table>    
+    </div>-->
+
+    <!--FORMULARIOS EN JS-->
+    <div class="container">    
+        <div class="mb-3">
+            <label for="USUARIO" class="form-label">INGRESE EL USUARIO</label>
+            <input type="text" class="form-control" id="USUARIO" name="USUARIO">
+        </div>
+        <div class="mb-3">
+            <label for="CLAVE" class="form-label">INGRESE LA CLAVE</label>
+            <input type="password" class="form-control" id="CLAVE" name="CLAVE">
+        </div>
+        <div class="mb-3">
+            <label for="texto" class="form-label">Escriba su comentario</label>
+            <textarea name="texto" class="form-control" id="texto" col="3'" row="30"></textarea>
+        </div>
+        <div class="mb-3">
+            <button type="submit" class="btn btn-primary" onclick="validaringreso()">INGRESAR</button>
+        </div>
+    </div>  
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script>
+        const nombre="Marina"
+        const pw="123"
+        function validaringreso(){
+            let nom=document.getElementById("USUARIO").value;
+            let pww=document.getElementById("CLAVE").value;
+            if(nom==nombre && pww==pw){
+                alert("Bienvenido")
+            }
+            else{
+                alert("Error en los datos de ingreso");
+            }
+        }
+    </script>
+         
+</body>
+</html>
