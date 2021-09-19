@@ -24,4 +24,10 @@ router.get('/categoria-audio',async (req,res)=>{
     console.log(tasks);
     res.render('index', {tasks});
 });
+
+router.get('/categoria-luces',async (req,res)=>{
+    const tasks=await Task.find({"CATEGORIA":"Luces"});
+    console.log(tasks);
+    res.render('index', {tasks});
+});
 module.exports=router;

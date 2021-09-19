@@ -26,7 +26,7 @@
                   
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                       <li><a class="dropdown-item" href="#">Top Ventas</a></li>
-                      <li><a class="dropdown-item" href="#">Linterna y luces</a></li>
+                      <li><a class="dropdown-item" href="/categoria-luces">Linterna y luces</a></li>
                       <li><a class="dropdown-item" href="/categoria-hogar">Hogar y cotidiano</a></li>
                       <li><a class="dropdown-item" href="categoria-audio">Audio y video</a></li>
                       <li><a class="dropdown-item" href="/categoria-belleza">Belleza</a></li>
@@ -55,15 +55,8 @@
         </div>
     </div>
         <div class="container-fluid">
-            <div class="row justify-content-left">
-                <div class="col-xxl-12" style="background-color:white;">
-                    <h1 style="text-align: center;">Desplega productos con card</h1>
-                </div>  
-            </div>      
-        </div>
-        <div class="container-fluid">
             <div class="row">
-                <div class="col-xl-12" style="text-align: center;" >
+                <!--<div class="col-xl-12" style="text-align: center;" >
                     <table class="table table-bordered table-hover">
                         <thead>
                             <th>ID PRODUCTO</th>
@@ -81,9 +74,19 @@
                                </tr>
                             <%}%>                  
                         </tbody>
-                    </table>
-                </div>
+                    </table>-->
+                    <% for(var i=0;i < tasks.length;i++){ %>
+                        <div class="card" style="width: 20rem;">
+                            <div class="card-body">
+                                <h1 class="card-title"><%=tasks[i].NOMBRE_PRODUCTO%></h1>
+                                <h6 class="card-subtitle mb-2 text-muted">IDENTIFICADOR DE PRODUCTO: <%=tasks[i].ID_PRODUCTO%></h6>
+                                <h6 class="card-subtitle mb-2 text-muted">UNIDADES: <%=tasks[i].CANTIDAD%></h6>
+                                <h6 class="card-subtitle mb-2 text-muted">CATEGORÍA: <%=tasks[i].CATEGORIA%></h6>
+                            </div>
+                        </div>
+                    <%}%>
 
+                </div>
             </div>
 
         </div>
